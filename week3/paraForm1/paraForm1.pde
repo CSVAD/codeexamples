@@ -17,8 +17,6 @@ Controller phaseSlider;
 
 void setup() {
   size(1024, 768, P3D);
-  
-  
   cp5 = new ControlP5(this);
 
   ringResSlider =  cp5.addSlider("resolution")
@@ -122,17 +120,4 @@ Point3D[] calculatePoints(float r, float y, int res) {
   }
 
   return pointList;
-}
-
-
-class Point3D {
-  float x;
-  float y;
-  float z;
-
-  Point3D(float x, float y, float z) {
-    this.x = x;
-    this.y = y;
-    this.z = z;
-  }
 }
