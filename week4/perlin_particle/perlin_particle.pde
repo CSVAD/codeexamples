@@ -27,17 +27,18 @@ Slider[] sliders;
 
 void setup(){
   size(1280,800);
+  background(0);
   smooth();
   for(int i=0; i<agents.length; i++) agents[i] = new Agent();
   setupGUI();
 }
 
 void draw(){
-  fill(255, overlayAlpha);
+  fill(0, overlayAlpha);
   noStroke();
   rect(0,0,width,height);
 
-  stroke(0, agentsAlpha);
+  stroke(255, agentsAlpha);
   //draw agents
  
    for(int i=0; i<agentsCount; i++){
