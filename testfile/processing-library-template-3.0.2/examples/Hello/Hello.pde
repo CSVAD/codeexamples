@@ -1,15 +1,15 @@
-import sample.library.*;
-import controlP5.*;
+import template.library.*;
 
 HelloLibrary hello;
 
 void setup() {
-  size(1000,1000);
+  size(400,400);
   smooth();
-  hello = new HelloLibrary(this);
-    hello.setupCP5();
-
   
+  hello = new HelloLibrary(this);
+  
+  PFont font = createFont("",40);
+  textFont(font);
 }
 
 void draw() {
